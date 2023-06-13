@@ -14,7 +14,7 @@ symbol = " "
 symbol = " "
 
 [directory]
-read_only = " "
+read_only = " "
 
 [docker_context]
 symbol = " "
@@ -47,7 +47,7 @@ symbol = "⌘ "
 symbol = " "
 
 [java]
-symbol = " "
+symbol = "󰬷 "
 
 [julia]
 symbol = " "
@@ -58,9 +58,6 @@ symbol = " "
 [memory_usage]
 symbol = " "
 
-[meson]
-symbol = "喝 "
-
 [nim]
 symbol = " "
 
@@ -68,7 +65,7 @@ symbol = " "
 symbol = " "
 
 [nodejs]
-symbol = " "
+symbol = "󰎙 "
 
 [os.symbols]
 Alpine = " "
@@ -109,7 +106,7 @@ Unknown = " "
 Windows = " "
 
 [package]
-symbol = " "
+symbol = "󰏓 "
 
 [pijul_channel]
 symbol = "🪺 "
