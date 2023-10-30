@@ -1,0 +1,99 @@
+//  __  __           _       _           
+// |  \/  | ___   __| |_   _| | ___  ___ 
+// | |\/| |/ _ \ / _` | | | | |/ _ \/ __|
+// | |  | | (_) | (_| | |_| | |  __/\__ \
+// |_|  |_|\___/ \__,_|\__,_|_|\___||___/
+//
+//------------------------------------------
+
+{
+	// Workspaces
+	"hyprland/workspaces": {
+		"active-only": false,
+		"all-outputs": true,
+		"sort-by-number": false,
+		//"disable-scroll": false,
+		//"on-scroll-up": "hyprctl dispatch workspace -1",
+		//"on-scroll-down": "hyprctl dispatch workspace +1",
+		"format": "{icon}",
+		"on-click": "activate",
+		"format-icons": {
+			"urgent": "  ",
+			"active": "  ",
+			"default": " 󰧞 "
+		}
+	},
+	
+	// CPU
+	"cpu": {
+		"format": "  {usage}%",
+		"format-alt": "  {avg_frequency} GHz",
+		//"on-click-right": "kitty bpytop",
+		//"interval": 3
+	},
+
+	// Memory
+	"memory": {
+		"format": "󰍛 {used} GiB"
+	},
+	
+	// Disk
+	"disk": {
+		"format": "  {used}",
+		"format-alt": "  {percentage_used}%",
+		"path": "/"
+	},
+
+	
+	// Pulseaudio
+	"pulseaudio": {
+		"format": "  {volume}%",
+		"format-muted": "󰝟 ",
+		"format-bluetooth": "{volume}% {icon} {format_source}",
+		//"on-click": "bash ~/.local/share/bin/",
+		//"on-scroll-up": "bash ~/.scripts/vol-up.sh",
+		//"on-scroll-down": "bash ~/.scripts/vol-down.sh",
+		"scroll-step": 5
+		//"on-click-right": "pavucontrol"
+	},
+
+	// Clock
+	"clock": {
+		"format": "  {:%H:%M}",
+		"tooltip": "true",
+		"tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+		"format-alt": "  {:%d/%m}",
+	},
+
+	// Battery
+    	"battery": {
+        	"states": {
+            		// "good": 95,
+            		"warning": 30,
+            		"critical": 15
+        	},
+        	"format": "{icon}   {capacity}%",
+        	"format-charging": "  {capacity}%",
+        	"format-plugged": "  {capacity}%",
+        	"format-alt": "{icon}  {time}",
+        	// "format-good": "", // An empty format will hide the module
+        	// "format-full": "",
+        	"format-icons": [" ", " ", " ", " ", " "]
+   	},
+
+	// Network
+	"network": {
+		"format": "{ifname}",
+		"format-wifi": "   {signalStrength}%",
+		"format-alt": "{ipaddr}/{cidr}",
+		"format-disconnected": "",
+		"max-length": 50
+	},
+	
+	// Backlight
+	"backlight": {
+        	// "device": "acpi_video1",
+        	"format": "{percent}% {icon}",
+        	"format-icons": [" ", " ", " ", " ", " ", " ", " ", " ", " "]
+    	}
+}
